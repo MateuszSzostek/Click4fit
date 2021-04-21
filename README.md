@@ -11,3 +11,9 @@ Download files, open project in editor and then run in command console:
 ```bash
     npm install
 ```
+
+And then:
+
+```bash
+    gatsby build
+```
