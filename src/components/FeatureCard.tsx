@@ -1,7 +1,5 @@
 import React from "react"
-
-import { Icon, InlineIcon } from "@iconify/react"
-import cameraIcon from "@iconify-icons/bytesize/camera"
+import { Icon } from "@iconify/react"
 
 interface IFeatureCardProps {
   name: string

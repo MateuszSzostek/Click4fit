@@ -11,8 +11,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `md_posts`,
+        path: `${__dirname}/src/md_posts`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -30,5 +30,31 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        commonmark: true,
+        footnotes: true,
+        pedantic: true,
+        gfm: true,
+        plugins: [
+          {
+            resolve: `gatsby-remark-relative-images`,
+            options: {
+              staticFolderName: "static",
+              include: ["featured"],
+              exclude: ["featured.skip"],
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              linkImagesToOriginal: false,
+              wrapperStyle: "max-width: 100vw;",
+            },
+          },
+        ],
+      },
+    },
   ],
 }

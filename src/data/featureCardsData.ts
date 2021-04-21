@@ -9,8 +9,6 @@ import paperPlane from "@iconify-icons/simple-line-icons/paper-plane"
 import userFollowing from "@iconify-icons/simple-line-icons/user-following"
 import infoCircled from "@iconify-icons/radix-icons/info-circled"
 
-import arrowUpCircle from "@iconify-icons/feather/arrow-up-circle"
-
 export const cardsData = [
   {
     id: 1,
