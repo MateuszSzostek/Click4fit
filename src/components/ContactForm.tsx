@@ -15,14 +15,39 @@ const ContactForm = () => {
               </p>
             </div>
             <form className="contact-form">
-              <label>Imię</label>
-              <input type="text" placeholder="Twoje imię..."></input>
-              <label>Nazwisko</label>
-              <input type="text" placeholder="Twoje nazwisko..."></input>
-              <label>Email</label>
-              <input type="text" placeholder="Twoj email..."></input>
-              <label>Telefon</label>
-              <input type="text" placeholder="Twoje numer telefonu..."></input>
+              <label className="bold-text" htmlFor="name">
+                Imię
+              </label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Twoje imię..."
+              ></input>
+              <label className="bold-text" htmlFor="surname">
+                Nazwisko
+              </label>
+              <input
+                type="text"
+                name="surname"
+                placeholder="Twoje nazwisko..."
+              ></input>
+              <label className="bold-text" htmlFor="email">
+                Email
+              </label>
+              <input
+                type="text"
+                name="email"
+                placeholder="Twoj email..."
+              ></input>
+              <label className="bold-text" htmlFor="phone">
+                Telefon
+              </label>
+              <input
+                type="text"
+                name="phone"
+                placeholder="Twoje numer telefonu..."
+              ></input>
+              <br />
               <Button>WYŚLIJ</Button>
             </form>
           </div>
