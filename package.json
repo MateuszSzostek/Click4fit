@@ -21,6 +21,14 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
+    "@iconify-icons/akar-icons": "^1.1.9",
+    "@iconify-icons/bytesize": "^1.1.0",
+    "@iconify-icons/cil": "^1.1.0",
+    "@iconify-icons/fa-solid": "^1.1.1",
+    "@iconify-icons/feather": "^1.1.0",
+    "@iconify-icons/radix-icons": "^1.1.2",
+    "@iconify-icons/simple-line-icons": "^1.1.0",
+    "@iconify/react": "^1.1.4",
     "prettier": "2.2.1"
   },
   "keywords": [

@@ -14,6 +14,8 @@ const Features = () => {
                 key={s.id}
                 name={s.name}
                 description={s.description}
+                icon={s.icon}
+                secondIcon={s.secondIcon}
               ></FeatureCard>
             ))}
           </div>
