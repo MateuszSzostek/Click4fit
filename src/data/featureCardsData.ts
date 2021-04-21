@@ -1,4 +1,3 @@
-import { Icon, InlineIcon } from "@iconify/react"
 import cameraIcon from "@iconify-icons/bytesize/camera"
 import calendarIcon from "@iconify-icons/cil/calendar"
 import camrecorderIcon from "@iconify-icons/simple-line-icons/camrecorder"
@@ -10,8 +9,6 @@ import paperPlane from "@iconify-icons/simple-line-icons/paper-plane"
 import userFollowing from "@iconify-icons/simple-line-icons/user-following"
 import infoCircled from "@iconify-icons/radix-icons/info-circled"
 
-import circleCheck from "@iconify-icons/akar-icons/circle-check"
-import plusIcon from "@iconify-icons/fa-solid/plus"
 import arrowUpCircle from "@iconify-icons/feather/arrow-up-circle"
 
 export const cardsData = [
