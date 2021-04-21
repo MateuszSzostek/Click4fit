@@ -15,7 +15,9 @@ const Header = () => {
           />
         </a>
         <Nav />
-        <Button>WYPRÓBUJ ZA DARMO</Button>
+        <Button isAnimated={true} animatedText="PRZEZ DWA TYGODNIE">
+          WYPRÓBUJ ZA DARMO
+        </Button>
       </header>
     </div>
   )
