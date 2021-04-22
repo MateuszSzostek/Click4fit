@@ -34,7 +34,11 @@ const Offer = () => {
               <span> 1 uczestnik treningu live - 5 zł za miesiąc</span>
             </div>
             <br />
-            <Button>ZAREJESTRUJ SIĘ</Button>
+            <Button
+              slug={"https://app.click4fit.me/register-to-create-organisation"}
+            >
+              ZAREJESTRUJ SIĘ
+            </Button>
           </div>
         </div>
       </section>

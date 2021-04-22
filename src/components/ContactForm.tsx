@@ -5,53 +5,17 @@ const ContactForm = () => {
   return (
     <>
       <section className="gray-background">
-        <div className="double-container">
-          <div className="double-grid">
-            <div>
-              <h2 className="section-title">KONTAKT</h2>
-              <p className="description-text">
-                Zamów bezpłatny 2 tygodniowy okres próbny. Wypełnij formularz –
-                skontaktujemy się z Tobą!
-              </p>
-            </div>
-            <form className="contact-form">
-              <label className="bold-text" htmlFor="name">
-                Imię
-              </label>
-              <input
-                type="text"
-                name="name"
-                placeholder="Twoje imię..."
-              ></input>
-              <label className="bold-text" htmlFor="surname">
-                Nazwisko
-              </label>
-              <input
-                type="text"
-                name="surname"
-                placeholder="Twoje nazwisko..."
-              ></input>
-              <label className="bold-text" htmlFor="email">
-                Email
-              </label>
-              <input
-                type="text"
-                name="email"
-                placeholder="Twoj email..."
-              ></input>
-              <label className="bold-text" htmlFor="phone">
-                Telefon
-              </label>
-              <input
-                type="text"
-                name="phone"
-                placeholder="Twoje numer telefonu..."
-              ></input>
-              <br />
-              <Button>WYŚLIJ</Button>
-            </form>
+        <address>
+          <div className="contact-container">
+            <h2 className="section-title">KONTAKT</h2>
+            <h3 className="bold-text">Napisz do nas maila</h3>
+            <p>info@click4fit.me</p>
+            <h3 className="bold-text">Odwiedź nas</h3>
+            <p>Żmigrodzka 244, 51-131, Wrocław, Poland</p>
+            <h3 className="bold-text">Zadzwoń do nas</h3>
+            <p>+48 535 124 505</p>
           </div>
-        </div>
+        </address>
       </section>
     </>
   )

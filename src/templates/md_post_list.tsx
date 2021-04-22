@@ -32,7 +32,6 @@ export const query = graphql`
 
 const Md_post_list = props => {
   const posts = props.data.allMarkdownRemark.edges
-  console.log(posts)
   return (
     <Layout>
       <Head title="" description="" keywords="" author="" />

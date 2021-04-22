@@ -4,10 +4,11 @@ import { PropsWithChildren, useState, useEffect } from "react"
 interface IButtonProps {
   isAnimated?: boolean
   animatedText?: string
+  slug?: string
 }
 
 const Button = (props: PropsWithChildren<IButtonProps>) => {
-  const { children, isAnimated, animatedText } = props
+  const { children, isAnimated, animatedText, slug } = props
   const [animated, setAnimated] = useState<boolean>(false)
   const [buttonText, setButtonText] = useState<string>("")
 
@@ -27,12 +28,12 @@ const Button = (props: PropsWithChildren<IButtonProps>) => {
   return (
     <>
       {isAnimated ? (
-        <a className="animated-button">
+        <a href={slug} className="animated-button">
           <div className="first-text"> {children}</div>
           <div className="second-text">{animatedText}</div>
         </a>
       ) : (
-        <a href="" className="button">
+        <a href={slug} className="button">
           <div className="button-text">{children}</div>
         </a>
       )}

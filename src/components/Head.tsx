@@ -23,7 +23,7 @@ const Head: React.FC<HeadProps> = props => {
   return (
     <Helmet>
       <meta charSet="utf-8" />
-      <title>{data.site.siteMetadata.title + " | " + props.title}</title>
+      <title>{data.site.siteMetadata.title}</title>
       <meta name="keywords" content={props.keywords} />
       <meta name="author" content={props.author} />
       <meta name="description" content={props.description} />
