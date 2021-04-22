@@ -6,6 +6,12 @@ module.exports = {
     keywords: ``,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-tawk`,
+      options: {
+        tawkId: process.env.GATSBY_TAWK_ID,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
