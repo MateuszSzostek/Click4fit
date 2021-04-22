@@ -5,17 +5,15 @@ import { Link } from "gatsby"
 const Nav = () => {
   return (
     <>
-      <nav>
-        <ul className="nav-elements">
-          <li className="nav-item">FUNKCJE</li>
-          <li className="nav-item">JAK TO DZIAŁA</li>
-          <li className="nav-item">CENNIK</li>
-          <Link to="/blog">
-            <li className="nav-item">BLOG</li>
-          </Link>
-          <li className="nav-item">KONTAKT</li>
-        </ul>
-      </nav>
+      <ul className="nav-elements">
+        <li className="nav-item">FUNKCJE</li>
+        <li className="nav-item">JAK TO DZIAŁA</li>
+        <li className="nav-item">CENNIK</li>
+        <Link to="/blog">
+          <li className="nav-item">BLOG</li>
+        </Link>
+        <li className="nav-item">KONTAKT</li>
+      </ul>
       <GoUpButton />
     </>
   )
