@@ -1,5 +1,5 @@
 import * as React from "react"
-import { useRef } from "react"
+import { useRef, useState, useEffect } from "react"
 import Layout from "../components/layout"
 import Landing from "../components/Landing"
 import Features from "../components/Features"
@@ -11,7 +11,7 @@ import { useScrollBy } from "react-use-window-scroll"
 
 const IndexPage = location => {
   let scroll = useScrollBy()
-
+  const [position, setPosition] = useState<number>(0)
   let landingRef = useRef<HTMLDivElement>()
   let featuresRef = useRef<HTMLDivElement>()
   let howItWorksRef = useRef<HTMLDivElement>()
@@ -28,6 +28,14 @@ const IndexPage = location => {
     }
   }
 
+  useEffect(() => {
+    if (location.location.state === null) {
+      setPosition(0)
+    } else {
+      setPosition(location.location.state.whereToGo)
+    }
+  }, [position])
+
   let locations = [landingRef, featuresRef, howItWorksRef, offerRef, contactRef]
 
   return (
@@ -36,28 +44,16 @@ const IndexPage = location => {
         <Landing />
       </div>
       <div ref={featuresRef}>
-        <Features
-          whereToGo={location.location.state.whereToGo}
-          scrollToFunc={scrollFunc}
-        />
+        <Features whereToGo={position} scrollToFunc={scrollFunc} />
       </div>
       <div ref={howItWorksRef}>
-        <HowItWorks
-          whereToGo={location.location.state.whereToGo}
-          scrollToFunc={scrollFunc}
-        />
+        <HowItWorks whereToGo={position} scrollToFunc={scrollFunc} />
       </div>
       <div ref={offerRef}>
-        <Offer
-          whereToGo={location.location.state.whereToGo}
-          scrollToFunc={scrollFunc}
-        />
+        <Offer whereToGo={position} scrollToFunc={scrollFunc} />
       </div>
       <div ref={contactRef}>
-        <ContactForm
-          whereToGo={location.location.state.whereToGo}
-          scrollToFunc={scrollFunc}
-        />
+        <ContactForm whereToGo={position} scrollToFunc={scrollFunc} />
       </div>
     </Layout>
   )
