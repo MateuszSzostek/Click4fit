@@ -24,7 +24,8 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "react-use-window-scroll": "^1.0.13"
+    "react-use-window-scroll": "^1.0.13",
+    "smartsupp-websocket": "^1.2.2"
   },
   "devDependencies": {
     "@iconify-icons/akar-icons": "^1.1.9",

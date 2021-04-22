@@ -1,7 +1,14 @@
-import React from "react"
-import Button from "../components/Button"
+import React, { useEffect } from "react"
+import { IPositionProps } from "../helpers/helpers"
 
-const ContactForm = () => {
+const ContactForm = (props: IPositionProps) => {
+  const { whereToGo, scrollToFunc } = props
+  useEffect(() => {
+    if (whereToGo === 4) {
+      scrollToFunc(whereToGo)
+    }
+  }, [whereToGo])
+
   return (
     <>
       <section className="gray-background">

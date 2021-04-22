@@ -1,8 +1,16 @@
-import React from "react"
 import FeatureCard from "../components/FeatureCard"
 import { cardsData } from "../data/featureCardsData"
+import React, { useEffect } from "react"
+import { IPositionProps } from "../helpers/helpers"
 
-const Features = () => {
+const Features = (props: IPositionProps) => {
+  const { whereToGo, scrollToFunc } = props
+  useEffect(() => {
+    if (whereToGo === 1) {
+      scrollToFunc(whereToGo)
+    }
+  }, [whereToGo])
+
   return (
     <>
       <section className="gray-background">

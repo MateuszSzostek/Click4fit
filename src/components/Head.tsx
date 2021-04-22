@@ -1,6 +1,7 @@
 import React from "react"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+
 interface HeadProps {
   title?: string
   description?: string
@@ -22,6 +23,7 @@ const Head: React.FC<HeadProps> = props => {
   `)
   return (
     <Helmet>
+      <script src="http://include.com/pathtojs.js" type="text/javascript" />
       <meta charSet="utf-8" />
       <title>{data.site.siteMetadata.title}</title>
       <meta name="keywords" content={props.keywords} />

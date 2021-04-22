@@ -2,7 +2,7 @@ import React from "react"
 import Sport from "../videos/Sport.mp4"
 import Button from "../components/Button"
 
-const Landing = () => {
+const Landing: React.FC = () => {
   return (
     <>
       <section>
