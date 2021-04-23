@@ -2,17 +2,9 @@ import Button from "../components/Button"
 import { Icon } from "@iconify/react"
 import circleCheck from "@iconify-icons/akar-icons/circle-check"
 import plusIcon from "@iconify-icons/fa-solid/plus"
-import React, { useEffect } from "react"
-import { IPositionProps } from "../helpers/helpers"
+import React from "react"
 
-const Offer = (props: IPositionProps) => {
-  const { whereToGo, scrollToFunc } = props
-  useEffect(() => {
-    if (whereToGo === 3) {
-      scrollToFunc(whereToGo)
-    }
-  }, [whereToGo])
-
+const Offer = () => {
   return (
     <>
       <section>

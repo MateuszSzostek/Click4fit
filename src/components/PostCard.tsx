@@ -1,10 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-interface IPostCardProps {
-  title: string
-  slug: string
-  shortDesc: string
-}
+import { IPostCardProps } from "../helpers/helpers"
 
 const PostCard = (props: IPostCardProps) => {
   const { title, slug, shortDesc } = props

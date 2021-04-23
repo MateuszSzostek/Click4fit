@@ -1,26 +1,27 @@
 import React from "react"
 import GoUpButton from "./GoUpButton"
 import { Link } from "gatsby"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 const Nav = () => {
   return (
     <>
       <ul className="nav-elements">
-        <Link to="/" state={{ whereToGo: 1 }}>
+        <AnchorLink to="/#features" title="Our team">
           <li className="nav-item">FUNKCJE</li>
-        </Link>
-        <Link to="/" state={{ whereToGo: 2 }}>
-          <li className="nav-item">JAK TO DZIAŁA</li>
-        </Link>
-        <Link to="/" state={{ whereToGo: 3 }}>
+        </AnchorLink>
+        <AnchorLink to="/#howitworks" title="Our team">
+          <li className="nav-item">JAK TO DZIAŁA?</li>
+        </AnchorLink>
+        <AnchorLink to="/#offer" title="Our team">
           <li className="nav-item">CENNIK</li>
-        </Link>
+        </AnchorLink>
         <Link to="/blog">
           <li className="nav-item">BLOG</li>
         </Link>
-        <Link to="/" state={{ whereToGo: 4 }}>
+        <AnchorLink to="/#contact" title="Our team">
           <li className="nav-item">KONTAKT</li>
-        </Link>
+        </AnchorLink>
       </ul>
       <GoUpButton />
     </>

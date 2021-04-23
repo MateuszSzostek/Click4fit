@@ -1,11 +1,5 @@
-import React from "react"
-import { PropsWithChildren, useState, useEffect } from "react"
-
-interface IButtonProps {
-  isAnimated?: boolean
-  animatedText?: string
-  slug?: string
-}
+import React, { PropsWithChildren, useState, useEffect } from "react"
+import { IButtonProps } from "../helpers/helpers"
 
 const Button = (props: PropsWithChildren<IButtonProps>) => {
   const { children, isAnimated, animatedText, slug } = props

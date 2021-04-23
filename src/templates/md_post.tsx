@@ -1,8 +1,7 @@
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import React from "react"
 import Layout from "../components/Layout"
 import Head from "../components/Head"
-import { Link } from "gatsby"
 
 export const query = graphql`
   query($slug: String) {

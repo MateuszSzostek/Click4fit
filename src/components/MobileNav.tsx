@@ -1,9 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-
-interface IMenuActive {
-  menuActive: boolean
-}
+import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { IMenuActive } from "../helpers/helpers"
 
 const MobileNav = (props: IMenuActive) => {
   const { menuActive } = props
@@ -12,21 +10,21 @@ const MobileNav = (props: IMenuActive) => {
       <ul
         className={menuActive ? "mob-nav-elements-active" : "mob-nav-elements"}
       >
-        <Link to="/" state={{ whereToGo: 1 }}>
+        <AnchorLink to="/#features">
           <li className="mob-nav-item">FUNKCJE</li>
-        </Link>
-        <Link to="/" state={{ whereToGo: 2 }}>
+        </AnchorLink>
+        <AnchorLink to="/#howitworks">
           <li className="mob-nav-item">JAK TO DZIAŁA</li>
-        </Link>
-        <Link to="/" state={{ whereToGo: 3 }}>
+        </AnchorLink>
+        <AnchorLink to="/#offer">
           <li className="mob-nav-item">CENNIK</li>
-        </Link>
+        </AnchorLink>
         <Link to="/blog">
           <li className="mob-nav-item">BLOG</li>
         </Link>
-        <Link to="/" state={{ whereToGo: 4 }}>
+        <AnchorLink to="/#contact">
           <li className="mob-nav-item">KONTAKT</li>
-        </Link>
+        </AnchorLink>
       </ul>
     </div>
   )

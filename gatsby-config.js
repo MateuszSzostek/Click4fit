@@ -7,6 +7,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -100,
+      },
+    },
+    {
       resolve: `gatsby-plugin-tawk`,
       options: {
         tawkId: process.env.GATSBY_TAWK_ID,
@@ -63,7 +69,6 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               linkImagesToOriginal: false,
-              wrapperStyle: "max-width: 100vw;",
             },
           },
         ],

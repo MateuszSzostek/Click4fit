@@ -1,15 +1,7 @@
 import Sport from "../videos/Sport.mp4"
-import React, { useEffect } from "react"
-import { IPositionProps } from "../helpers/helpers"
+import React from "react"
 
-const HowItWorks = (props: IPositionProps) => {
-  const { whereToGo, scrollToFunc } = props
-  useEffect(() => {
-    if (whereToGo === 2) {
-      scrollToFunc(whereToGo)
-    }
-  }, [whereToGo])
-
+const HowItWorks = () => {
   return (
     <>
       <section className="dark-gray-background">

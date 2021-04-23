@@ -1,14 +1,6 @@
-import React, { useEffect } from "react"
-import { IPositionProps } from "../helpers/helpers"
+import React from "react"
 
-const ContactForm = (props: IPositionProps) => {
-  const { whereToGo, scrollToFunc } = props
-  useEffect(() => {
-    if (whereToGo === 4) {
-      scrollToFunc(whereToGo)
-    }
-  }, [whereToGo])
-
+const ContactForm = () => {
   return (
     <>
       <section className="gray-background">

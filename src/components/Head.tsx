@@ -1,14 +1,8 @@
 import React from "react"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-
-interface HeadProps {
-  title?: string
-  description?: string
-  keywords?: string
-  author?: string
-}
-const Head: React.FC<HeadProps> = props => {
+import { IHeadProps } from "../helpers/helpers"
+const Head: React.FC<IHeadProps> = props => {
   const data = useStaticQuery(graphql`
     query HomeQuery {
       site {
