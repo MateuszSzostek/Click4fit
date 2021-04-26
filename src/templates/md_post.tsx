@@ -32,10 +32,14 @@ const Md_post = props => {
           <h1 className="article-title">
             {props.data.markdownRemark.frontmatter.title}
           </h1>
-          <div
-            className=""
-            dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }}
-          />
+          <article>
+            <div
+              className=""
+              dangerouslySetInnerHTML={{
+                __html: props.data.markdownRemark.html,
+              }}
+            />
+          </article>
           <div className="next-post-wrapper">
             <Link
               to={"/blog/" + props.data.markdownRemark.frontmatter.nextslug}
