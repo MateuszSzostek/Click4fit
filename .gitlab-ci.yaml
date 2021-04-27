@@ -6,23 +6,16 @@ variables:
   CONTAINER_RELEASE_IMAGE: $CI_REGISTRY_IMAGE:latest
 
 build-prod:
-  image: node:lts
   stage: build
-  only:
-    refs:
-      - develop
-  cache:
-    paths:
-      - node_modules
   script:
-    - node -v
-    - npm -v
     - npm install
-    - unset CI
-    - REACT_APP_BACKEND_URL=https://jumpheroez.com/ npm run build
+    - ./node_modules/.bin/gatsby build
   artifacts:
     paths:
-      - $CI_PROJECT_DIR/build
+    - public
+  only:
+    - master
+
 
 build-test:
   image: node:lts
