@@ -1,31 +1,8 @@
 import React from "react"
 import Sport from "../videos/Sport.mp4"
 import Button from "../components/Button"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
 
 const Landing = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      allFile(filter: { name: { eq: "landing-background" } }) {
-        edges {
-          node {
-            childImageSharp {
-              fluid {
-                base64
-                tracedSVG
-                srcWebp
-                srcSetWebp
-                originalImg
-                originalName
-              }
-            }
-          }
-        }
-      }
-    }
-  `)
-
   return (
     <>
       <section>
@@ -33,9 +10,7 @@ const Landing = () => {
           <video className="video-background" autoPlay muted loop>
             <source src={Sport} type="video/mp4"></source>
           </video>
-          <div className="background-image">
-            <Img fluid={data.allFile.edges[0].node.childImageSharp.fluid} />
-          </div>
+
           <div className="landing-text">
             <h1 className="landing-heading">
               KOMPLEKSOWA PLATFORMA DO TRENINGÓW ONLINE
