@@ -1,13 +1,13 @@
-from node:14.16.1-alpine3.13
+FROM node:14.16.1-alpine:3.7
 
-run mkdir /app
+RUN mkdir /app
 
-workdir /app
+WORKDIR /app
 
-copy . .
+COPY . .
 
-run npm install joi
-run gatsby build
+RUN npm install
+RUN gatsby build
 
 EXPOSE 8000
 
