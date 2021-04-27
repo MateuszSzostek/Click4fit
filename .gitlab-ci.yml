@@ -6,6 +6,7 @@ variables:
   CONTAINER_RELEASE_IMAGE: $CI_REGISTRY_IMAGE:latest
 
 build-prod:
+  image: node:lts
   stage: build
   script:
     - npm install
