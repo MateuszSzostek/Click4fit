@@ -1,13 +1,13 @@
 FROM alpine:3.7
 
-run mkdir /app
+RUN mkdir /app
 
-workdir /app
+WORKDIR /app
 
-copy . .
+COPY . .
 
-run npm install
-run gatsby build
+RUN npm install
+RUN gatsby build
 
 EXPOSE 8000
 
