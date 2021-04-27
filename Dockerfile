@@ -6,7 +6,7 @@ workdir /app
 
 copy . .
 
-run npm install sharp
+run npm install libvips
 run npm install
 run gatsby build
 
