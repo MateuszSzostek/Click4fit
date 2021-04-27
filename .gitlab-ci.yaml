@@ -17,56 +17,21 @@ build-prod:
     - master
 
 
-build-test:
-  image: node:lts
-  stage: build
-  only:
-    refs:
-      - test-server
-  cache:
-    paths:
-      - node_modules
-  script:
-    - node -v
-    - npm -v
-    - npm install
-    - unset CI
-    - REACT_APP_BACKEND_URL=https://dev-test.jumpheroez.com/ npm run build
-  artifacts:
-    paths:
-      - $CI_PROJECT_DIR/build
-  when: manual
-
 build-docker-develop-prod:
   image: docker:latest
   stage: build-docker
   only:
     refs:
-      - develop
+      - master
   before_script:
     - docker info
     - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
   services:
     - docker:19.03.5-dind
   script:
-    - BUILD_IMAGE_NAME=$CI_REGISTRY_IMAGE:prod-frontend-jumpheroez
+    - BUILD_IMAGE_NAME=$CI_REGISTRY_IMAGE:gatsby
     - docker build --pull --force-rm=true -t "$BUILD_IMAGE_NAME" .
     - docker push "$BUILD_IMAGE_NAME"
   when: manual
 
-build-docker-develop-test:
-  image: docker:latest
-  stage: build-docker
-  only:
-    refs:
-      - test-server
-  before_script:
-    - docker info
-    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
-  services:
-    - docker:19.03.5-dind
-  script:
-    - BUILD_IMAGE_NAME=$CI_REGISTRY_IMAGE:test-frontend-jumpheroez
-    - docker build --pull --force-rm=true -t "$BUILD_IMAGE_NAME" .
-    - docker push "$BUILD_IMAGE_NAME"
-  when: manual
+
