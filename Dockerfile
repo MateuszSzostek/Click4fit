@@ -6,7 +6,7 @@ workdir /app
 
 copy . .
 
-run npm install
+run npm install joi
 run gatsby build
 
 EXPOSE 8000
