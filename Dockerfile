@@ -6,7 +6,6 @@ workdir /app
 
 copy . .
 
-run npm install libvips
 run npm install
 run gatsby build
 
