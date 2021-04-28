@@ -6,6 +6,6 @@ WORKDIR /app
 
 COPY . .
 
-EXPOSE 8000
+EXPOSE 8002
 
 CMD "npm" "start"
