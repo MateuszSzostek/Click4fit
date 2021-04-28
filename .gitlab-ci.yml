@@ -9,8 +9,6 @@ build-prod:
   image: node:lts
   stage: build
   script:
-    - npm install sharp
-    - npm install libvips
     - npm install
     - ./node_modules/.bin/gatsby build
   artifacts:
