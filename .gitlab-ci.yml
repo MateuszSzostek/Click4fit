@@ -41,6 +41,3 @@ build-docker-develop-prod:
     - BUILD_IMAGE_NAME=$CI_REGISTRY_IMAGE:click4fit
     - docker build --pull --force-rm=true -t "$BUILD_IMAGE_NAME" .
     - docker push "$BUILD_IMAGE_NAME"
-  when: manual
-
-
