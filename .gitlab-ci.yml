@@ -14,9 +14,8 @@ build-prod:
       - node_modules/
       - public/
   script:
+    - npm install
     - npm install -g gatsby-cli
-    - pwd
-    - ls
     - ./node_modules/.bin/gatsby build
   artifacts:
     paths:
