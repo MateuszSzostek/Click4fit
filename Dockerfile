@@ -7,6 +7,5 @@ WORKDIR /app
 COPY . .
 
 EXPOSE 8002
-CMD [ "npm", "run", "start" ]
 CMD gatsby build
 CMD gatsby serve -H 0.0.0.0
