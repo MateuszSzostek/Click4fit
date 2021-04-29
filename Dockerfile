@@ -7,5 +7,3 @@ WORKDIR /app
 COPY . .
 
 EXPOSE 8002
-
-CMD "gatsby" "build"
