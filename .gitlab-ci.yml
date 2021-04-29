@@ -14,6 +14,7 @@ build-prod:
       - node_modules/
       - public/
   script:
+    - npm install
     - npm install -g gatsby-cli
     - pwd
     - ls
