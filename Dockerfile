@@ -1,10 +1,12 @@
 FROM node:14.16.1-alpine3.13
 
-RUN mkdir /data
-RUN chown -R root:root /data
-RUN chmod -R 666 /data
+RUN mkdir /app
 
-COPY build /data
+WORKDIR /app
 
+COPY . .
 
-CMD  cp -Rv /data/* /usr/share/nginx/html/
+EXPOSE 8002
+CMD [ "npm", "run", "start" ]
+CMD gatsby build
+CMD gatsby serve -H 0.0.0.0
