@@ -8,4 +8,4 @@ COPY . .
 
 EXPOSE 8002
 
-CMD npm run build
+CMD gatsby build
