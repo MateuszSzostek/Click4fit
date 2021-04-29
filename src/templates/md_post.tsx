@@ -4,7 +4,7 @@ import Layout from "../components/Layout"
 import Head from "../components/Head"
 
 export const query = graphql`
-  query($slug: String) {
+  query($slug: String, $postImage: String) {
     markdownRemark(
       fileAbsolutePath: { regex: "/(md_posts)/" }
       frontmatter: { slug: { eq: $slug } }
@@ -17,8 +17,16 @@ export const query = graphql`
         shortDesc
         nextslug
         nexttitle
+        postImage {
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH)
+          }
+        }
       }
       html
+    }
+    imageSharp(fluid: { originalName: { eq: $postImage } }) {
+      gatsbyImageData(layout: FULL_WIDTH)
     }
   }
 `
@@ -26,7 +34,12 @@ export const query = graphql`
 const Md_post = props => {
   return (
     <Layout>
-      <Head title="" description="" keywords="" author="" />
+      <Head
+        title={props.data.markdownRemark.frontmatter.title}
+        description={props.data.markdownRemark.frontmatter.shortDesc}
+        keywords={props.data.markdownRemark.frontmatter.keywords}
+        author="Oakfusion"
+      />
       <section>
         <div className="post-list-container">
           <h1 className="article-title">

@@ -2,12 +2,12 @@ import * as React from "react"
 import Head from "./Head"
 import Header from "./Header"
 import Footer from "./Footer"
-import "../css/styles.min.css"
+import "../css/styles.css"
 
 const Layout = ({ children }) => {
   return (
     <>
-      <Head />
+      <Head title="Platforma treningowa online" />
       <Header />
       <main>{children}</main>
       <Footer />

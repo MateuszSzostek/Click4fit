@@ -1,0 +1,503 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+
+.animated-button:hover {
+  background-color: black;
+}
+
+.animated-button:hover > .first-text {
+  -webkit-transform: translateY(170%);
+          transform: translateY(170%);
+}
+
+.animated-button:hover > .second-text {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.first-text {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.second-text {
+  width: inherit;
+  top: 15px;
+  -webkit-transform: translateX(-130%);
+          transform: translateX(-130%);
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+.landing-heading, .landing-description, .post-description {
+  margin-top: 0px;
+}
+
+header, .post-list-container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.offer-icon, .footer-text {
+  margin-right: 6px;
+}
+
+.blog-title, .article-title, .next-post-wrapper {
+  margin-top: 140px;
+  margin-bottom: 50px;
+}
+
+.card-icon, .arrow-up-button, .menu-button {
+  width: 50px;
+  height: 50px;
+}
+
+.footer-container {
+  height: 50px;
+}
+
+.offer-icon {
+  width: 23px;
+  height: 23px;
+}
+
+.post-list-container, .landing-heading, .landing-description, .offer-card, .contact-container {
+  margin-bottom: 25px;
+}
+
+.offer-card {
+  margin-top: 25px;
+}
+
+.post-title {
+  margin-bottom: 0px;
+}
+
+.offer-title {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.feature-card {
+  margin: 10px;
+}
+
+.feature-card, .double-grid, .offer-card {
+  padding: 30px;
+}
+
+.button-text, .animated-button {
+  padding: 15px;
+}
+
+.offer-text-description {
+  padding: 3px;
+}
+
+.landing-description, .description-text, .description-text-white {
+  font-weight: 400;
+}
+
+.landing-heading, .nav-item, .offer-price, .offer-price-desc, .bold-text, .mob-nav-item {
+  font-weight: 700;
+}
+
+.landing-heading {
+  font-size: 4rem;
+  line-height: 65px;
+}
+
+.offer-price-desc {
+  line-height: 10px;
+}
+
+header, .nav-elements {
+  height: 90px;
+}
+
+.article-title, .post-list-container, .footer-container, header, .description-section, .features-container, .double-container, .blog-title {
+  width: 1140px;
+  max-width: 1140px;
+}
+
+.header-container {
+  -webkit-box-shadow: 0px 0px 38px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 38px 0px rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: 50;
+}
+
+.go-up-button, .footer-container, .offer-text-description, .animated-button, .button, .landing-text, .header-container, header, .nav-elements, nav, .landing-container, .description-section, section, .features-container, .card-icons-container, .double-container, .offer-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.go-up-button, .footer-container, .offer-text-description, .animated-button, .button, .offer-card, header, .nav-elements, nav, .landing-container, .description-section, .features-container, .double-container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-container, .go-up-button {
+  position: fixed;
+}
+
+.landing-container, .animated-button {
+  position: relative;
+}
+
+.second-text, .landing-text, .video-background {
+  position: absolute;
+}
+
+.go-up-button {
+  right: 20px;
+  bottom: 20px;
+  width: 67px;
+  height: 67px;
+}
+
+.go-up-button, .button-text, .animated-button {
+  background-color: #40b28a;
+}
+
+.post-slug {
+  color: #40b28a;
+}
+
+section {
+  width: 100vw;
+}
+
+.offer-text-description, .nav-elements, nav, .card-icons-container {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.landing-text, .description-section, .features-container, .offer-card {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header, .card-icons-container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.go-up-button, .animated-button, .button, .header-container, .landing-container, .description-section, section, .features-container, .offer-card {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-container {
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.icon-modal, .nav-item:hover, .animated-button, .arrow-up-button, .mob-nav-item, .mob-menu-button {
+  cursor: pointer;
+}
+
+.icon-modal:hover > svg {
+  color: #40b28a;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.animated-button {
+  overflow: hidden;
+}
+
+.first-text, .second-text, .animated-button, .nav-item:hover, .feature-card:hover, .offer-card:hover, .mob-nav-item {
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.arrow-up-button, footer, .first-text, .second-text, .button-text, .nav-item:hover, .button-text, .landing-text, .section-title-light, .description-text-white {
+  color: white;
+}
+
+a > .nav-item, a .mob-nav-item {
+  color: black;
+}
+
+a:hover > .nav-item {
+  color: white;
+}
+
+.section-title, .card-icon {
+  color: #333333;
+}
+
+.dark-gray-background {
+  background-color: #333333;
+}
+
+.nav-item:hover, .black-background {
+  background-color: black;
+}
+
+.nav-item, .mob-nav-item {
+  list-style-type: none;
+}
+
+.contact-container {
+  font-style: normal;
+}
+
+.nav-item {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.description-section {
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 650px;
+}
+
+.nav-item, .features-container, .double-container, .offer-container {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+footer, section, .video-background, .landing-container, .header-container, .example-video {
+  width: 100%;
+}
+
+.landing-heading {
+  font-size: 4rem;
+}
+
+.landing-description {
+  font-size: 1.37rem;
+}
+
+span, .description-text, .card-title, .description-text-white, .post-description, .post-slug {
+  font-size: 1.2rem;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+}
+
+.section-title, .section-title-light, .offer-price, .blog-title, .article-title {
+  font-size: 2.8rem;
+}
+
+.offer-title, .post-title {
+  font-size: 2.2rem;
+}
+
+.article-title, .button-text, .blog-title, .header-container, .landing-description, .landing-heading, .description-section, .contact-container {
+  text-align: center;
+}
+
+.mob-nav-item {
+  text-align: left;
+}
+
+.feature-card, .offer-card {
+  border: solid #cccccc 3px;
+}
+
+.feature-card:hover, .offer-card:hover {
+  border: solid #40b28a 3px;
+}
+
+.landing-heading {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.background-image {
+  width: 100%;
+}
+
+.background-image > .gatsby-image-wrapper {
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+.gray-background {
+  background-color: #f7f7f7;
+}
+
+.button-text {
+  padding: 15px;
+}
+
+.flex-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video-background, .landing-container {
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.feature-grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+      grid-template-areas: "feature-card feature-card feature-card" "feature-card feature-card feature-card" "feature-card feature-card feature-card";
+}
+
+.double-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 50%;
+      grid-template-columns: auto 50%;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 0px 0px;
+      grid-template-areas: "double double";
+}
+
+input[type=text] {
+  margin-bottom: 15px;
+  margin-top: 5px;
+  outline: none;
+  border: none;
+  border-bottom: solid #cccccc 1px;
+  background-color: transparent;
+}
+
+.menu-button, .mob-nav-elements, .background-image {
+  display: none;
+}
+
+.mob-nav-elements-active {
+  position: absolute;
+  left: 0;
+  top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  margin: 0;
+  width: 100%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding-bottom: 15px;
+}
+
+.mob-nav-item, .post-list-container {
+  padding-bottom: 5px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border-bottom: solid #cccccc 1px;
+  -webkit-text-fill-color: #40b28a;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+@media only screen and (max-width: 1140px) {
+  header, .post-list-container, .blog-title, .article-title {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .pc-promo-button-wrapper {
+    display: none;
+  }
+  .menu-button {
+    display: unset;
+  }
+  .nav-elements {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .feature-grid-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "feature-card";
+  }
+  .double-grid {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: "double";
+  }
+  .landing-heading {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .offer-text-description > span, .post-description {
+    font-size: 1rem;
+  }
+  .section-title, .offer-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .post-title, .article-title {
+    font-size: 1.5rem;
+  }
+  .description-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .double-grid, .offer-card, .button-text {
+    padding: 10px;
+  }
+  .offer-container {
+    margin: 10px;
+  }
+  .section-title-light, .description-text-white {
+    text-align: center;
+  }
+  .background-image {
+    display: initial;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

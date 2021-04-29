@@ -3,7 +3,12 @@ import GoUpButton from "./GoUpButton"
 import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 
-const Nav = () => {
+interface INavProps {
+  toggleMenu: Function
+}
+
+const Nav = (props: INavProps) => {
+  const { toggleMenu } = props
   return (
     <>
       <ul className="nav-elements">

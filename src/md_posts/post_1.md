@@ -4,9 +4,12 @@ slug: "czego-potrzebujesz-aby-przeprowadzic-trening-online"
 nextslug: "trening-fitness-jak-pozyskac-klientow-spoza-twojego-miasta"
 title: "CZEGO POTRZEBUJESZ, ABY PRZEPROWADZIĆ TRENING ONLINE?"
 nexttitle: "TRENING FITNESS – JAK POZYSKAĆ KLIENTÓW SPOZA TWOJEGO MIASTA?"
-keywords: ""
+keywords: "trening online"
 shortDesc: "W dobie pandemii wiele placówek sportowych jest zamykanych, w tym także siłownie i sale treningowe. Miejsca, które były oblegane przez miłośników aktywności, dziś stoją puste. Zamknięcie branży fitness nie sprawiło jednak, że ludzie przestali ćwiczyć – zmieniła się jedynie forma. Z poniższego artykułu dowiesz się: Czym jest trening online?, Jakie są zalety treningu online? Czym są platformy do treningów online? Jak zachęcić ludzi do treningów online?"
+postImage: images/co_potrzebujesz_do_treningu_online.jpg
 ---
+
+![Co potrzebujesz do treningu online](./images/co_potrzebujesz_do_treningu_online.jpg)
 
 <h1>Czym jest trening online?</h1>
 Trening online jest to rodzaj nauczania, który pomaga w zdobywaniu i utrwalaniu nowej wiedzy. Treningi fizyczne prowadzone przez internet, są alternatywą dla zajęć na siłowni czy sali treningowej. Trener prowadzący zajęcia łączy się z resztą grupy za pomocą platformy lub komunikatora i wykonuje ćwiczenia, które w tym samym czasie powtarzają jego podopieczni. Urządzenie, na którym uczestnicy otworzą trening, jest tu bez znaczenia. Może być to laptop, komputer stacjonarny, tablet, a nawet telefon. W trakcie treningu jest możliwość komunikacji poprzez czat. Ludzie biorący udział w Twoim treningu mogą na bieżąco zadawać pytania lub podawać swoje sugestie dotyczące ćwiczeń. Dużo osób szuka w wyszukiwarkach możliwości wzięcia udziału w treningu online. Jest to ostatnio najpopularniejsza forma aktywności fizycznej, ciesząca się ciągle rosnącym zainteresowaniem.
@@ -17,5 +20,5 @@ Pierwszą najważniejszą zaletą jest możliwość pracy, gdy dotychczasowe mie
 <h1>Czym są platformy do treningów online?</h1>
 Wraz z rozwojem treningów przez internet, znaleźć możemy w sieci coraz więcej platform treningowych. Taka platforma wychodzi na naprzeciw oczekiwaniom trenerów personalnych, czy instruktorów sportów oraz studiów fitness. Można na niej prowadzić trening dla dużej ilości osób, w bardzo wygodnej i intuicyjnej formie. Trenerowi zapewnione zostanie wsparcie techniczne i dostęp do ciekawych narzędzi. Ponadto dzięki takiej platformie istnieje możliwość zdobycia nowych użytkowników i stałego zarobku. Oprócz zwykłych transmisji live znajdziesz tam np. możliwość układania planów treningowych, możliwość dodawania własnych produktów do sklepu, możliwość wysyłania maili i czatowania z podopiecznymi, a także możliwość zarządzania użytkownikami. Większość platform proponuje trenerom również możliwość skorzystania ze swoich zasobów przez pewien okres za darmo. Jest to świetne rozwiązanie, jeśli jesteś trenerem, który jeszcze nie miał styczności z treningami online.
 
-Jak zachęcić ludzi do treningów online?
+<h1>Jak zachęcić ludzi do treningów online?</h1>
 Fenomenem tego typu treningów jest fakt, że ich popularność napędza się praktycznie sama. Przez zamknięcie lokali, ludzie sami szukają możliwości wykonywania aktywności w domowym zaciszu. Jeśli wybierzesz dobrze prosperującą, profesjonalną platformę do treningów online, możesz być pewny, że na Twoich zajęciach zawsze będą tłumy. Jeśli chcesz zachęcić swoich podopiecznych do takiego rozwiązania, warto wrzucić na swoje social media informacje o prowadzeniu takich zajęć, nagrać parę minut darmowego treningu lub skorzystać z rozsyłania maili z informacjami, że pojawiła się możliwość takich ćwiczeń. Większości użytkowników nie trzeba namawiać, a jeśli tak, po pierwszym skorzystaniu z takiej platformy, na pewno zostaną z Tobą na dłużej.

@@ -18,8 +18,10 @@ module.exports = {
         tawkId: process.env.GATSBY_TAWK_ID,
       },
     },
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`, // Needed for dynamic images
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -34,7 +36,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -67,7 +68,9 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
+              maxWidth: 1200,
               linkImagesToOriginal: false,
+              wrapperStyle: "max-width: 100vw;",
             },
           },
         ],

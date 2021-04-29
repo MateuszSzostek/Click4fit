@@ -11,7 +11,7 @@ export interface IFeatureCardProps {
 }
 
 export interface IHeadProps {
-  title?: string
+  title: string
   description?: string
   keywords?: string
   author?: string

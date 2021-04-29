@@ -34,7 +34,7 @@ const Md_post_list = props => {
   const posts = props.data.allMarkdownRemark.edges
   return (
     <Layout>
-      <Head title="" description="" keywords="" author="" />
+      <Head title="Blog" description="" keywords="" author="" />
       <section>
         <div className="post-list-container">
           <h1 className="blog-title">BLOG</h1>
