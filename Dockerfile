@@ -1,15 +1,10 @@
 FROM node:14.16.1-alpine3.13
 
-RUN mkdir /app
+RUN mkdir /data
+RUN chown -R root:root /data
+RUN chmod -R 666 /data
 
-WORKDIR /app
+COPY build /data
 
-COPY . .
 
-RUN ls
-
-RUN ls /app
-
-EXPOSE 8002
-
-CMD npm run build
+CMD  cp -Rv /data/* /usr/share/nginx/html/
