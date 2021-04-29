@@ -6,6 +6,10 @@ WORKDIR /app
 
 COPY . .
 
+RUN ls
+
+RUN ls /app
+
 EXPOSE 8002
 
-CMD gatsby build
+CMD npm run build
