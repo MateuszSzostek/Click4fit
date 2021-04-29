@@ -1,4 +1,4 @@
-FROM node:14.16.1-alpine:3.7
+FROM node:14.16.1-alpine3.13
 
 RUN mkdir /app
 
@@ -6,9 +6,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN npm install
-RUN gatsby build
+EXPOSE 8002
 
-EXPOSE 8000
-
-CMD "npm" "start"
+CMD "gatsby" "build"

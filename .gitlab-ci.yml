@@ -9,8 +9,6 @@ build-prod:
   image: node:lts
   stage: build
   script:
-    - npm install sharp
-    - npm install libvips
     - npm install
     - ./node_modules/.bin/gatsby build
   artifacts:
@@ -32,7 +30,7 @@ build-docker-develop-prod:
   services:
     - docker:19.03.5-dind
   script:
-    - BUILD_IMAGE_NAME=$CI_REGISTRY_IMAGE:gatsby
+    - BUILD_IMAGE_NAME=$CI_REGISTRY_IMAGE:click4fit
     - docker build --pull --force-rm=true -t "$BUILD_IMAGE_NAME" .
     - docker push "$BUILD_IMAGE_NAME"
   when: manual
