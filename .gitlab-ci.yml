@@ -9,11 +9,12 @@ build-prod:
   image: node:lts
   stage: build
   script:
-    - npm install --global gatsby-cli
-    - ./node_modules/.bin/gatsby build
+    - npm install -g gatsby-cli
+    - gatsby --help
+    - gatsby build
   artifacts:
     paths:
-    - public
+      - public
   only:
     - master
 
