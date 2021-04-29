@@ -8,10 +8,14 @@ variables:
 build-prod:
   image: node:lts
   stage: build
+  cache:
+    paths:
+      - .cache/
+      - node_modules/
+      - public/
   script:
     - npm install -g gatsby-cli
-    - gatsby --help
-    - gatsby build
+    - ./node_modules/.bin/gatsby build
   artifacts:
     paths:
       - public
