@@ -5,6 +5,8 @@ RUN mkdir /app
 WORKDIR /app
 
 COPY . .
+RUN ls
+RUN ls /app
 
 EXPOSE 8002
 
