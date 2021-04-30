@@ -7,4 +7,5 @@ WORKDIR /app
 COPY ./public/ .
 RUN ls
 EXPOSE 8002
+CMD cp --from=builder /app/public /usr/share/nginx/html
 
