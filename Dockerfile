@@ -7,5 +7,4 @@ WORKDIR /app
 COPY . .
 
 EXPOSE 8002
-CMD gatsby build
-CMD gatsby serve -H 0.0.0.0
+
