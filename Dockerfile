@@ -4,9 +4,7 @@ RUN mkdir /app
 
 WORKDIR /app
 
-COPY . .
+COPY ./public .
 RUN ls
-RUN ls /app
-
 EXPOSE 8002
 
