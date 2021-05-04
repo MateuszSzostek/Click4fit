@@ -1,41 +1,35 @@
 stages:
-  - build
-  - build-docker
-variables:
-  CONTAINER_TEST_IMAGE: $CI_REGISTRY_IMAGE:$CI_BUILD_REF_NAME
-  CONTAINER_RELEASE_IMAGE: $CI_REGISTRY_IMAGE:latest
+    - build
+    - compile
 
-build-prod:
-  image: node:lts
-  stage: build
-  cache:
-    paths:
-      - .cache/
-      - node_modules/
-      - public/
-  script:
-    - npm install
-    - npm install -g gatsby-cli
-    - ./node_modules/.bin/gatsby build
-  artifacts:
-    paths:
-      - public
-  only:
-    - master
+pages-build:
+    image: node:latest
+    stage: build
+    script:
+        - npm install
+        - ./node_modules/.bin/gatsby clean
+        - ./node_modules/.bin/gatsby build
+    artifacts:
+        paths:
+            - public
+    rules:
+        - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
 
-
-build-docker-develop-prod:
-  image: docker:latest
-  stage: build-docker
-  only:
-    refs:
-      - master
-  before_script:
-    - docker info
-    - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN $CI_REGISTRY
-  services:
-    - docker:19.03.5-dind
-  script:
-    - BUILD_IMAGE_NAME=$CI_REGISTRY_IMAGE:click4fit
-    - docker build --pull --force-rm=true -t "$BUILD_IMAGE_NAME" .
-    - docker push "$BUILD_IMAGE_NAME"
+docker-compile:
+    image: docker:latest
+    stage: compile
+    services:
+        - docker:dind
+    before_script:
+        - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+    script:
+        - |
+            if [[ "$CI_COMMIT_BRANCH" == "$CI_DEFAULT_BRANCH" ]]; then
+              tag=""
+              echo "Running on default branch '$CI_DEFAULT_BRANCH': tag = 'latest'"
+            else
+              tag=":$CI_COMMIT_REF_SLUG"
+              echo "Running on branch '$CI_COMMIT_BRANCH': tag = $tag"
+            fi
+        - docker build --pull -t "$CI_REGISTRY_IMAGE${tag}" .
+        - docker push "$CI_REGISTRY_IMAGE${tag}"

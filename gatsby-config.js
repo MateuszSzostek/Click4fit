@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: ``,
   siteMetadata: {
     title: `Click4fit`,
     description: `Click4fit description.`,

@@ -48,11 +48,5 @@
   },
   "keywords": [
     "gatsby"
-  ],
-  "scripts": {
-    "build": "gatsby build",
-    "start": "npm run build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  }
+  ]
 }
