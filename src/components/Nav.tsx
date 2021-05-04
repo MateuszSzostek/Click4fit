@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 interface INavProps {
-  toggleMenu: Function
+  toggleMenu?: Function
 }
 
 const Nav = (props: INavProps) => {
