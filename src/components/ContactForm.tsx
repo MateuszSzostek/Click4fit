@@ -1,23 +1,33 @@
-import React from "react"
+import React from "react";
+import { useIntl } from "gatsby-plugin-react-intl";
 
 const ContactForm = () => {
-  return (
-    <>
-      <section className="gray-background">
-        <address>
-          <div className="contact-container">
-            <h2 className="section-title">KONTAKT</h2>
-            <h3 className="bold-text">Napisz do nas maila</h3>
-            <p>info@click4fit.me</p>
-            <h3 className="bold-text">Odwiedź nas</h3>
-            <p>Żmigrodzka 244, 51-131, Wrocław, Poland</p>
-            <h3 className="bold-text">Zadzwoń do nas</h3>
-            <p>+48 535 124 505</p>
-          </div>
-        </address>
-      </section>
-    </>
-  )
-}
+    const intl = useIntl();
+    return (
+        <>
+            <section className="gray-background">
+                <address>
+                    <div className="contact-container">
+                        <h2 className="section-title">
+                            {intl.formatMessage({ id: "contact" })}
+                        </h2>
+                        <h3 className="bold-text">
+                            {intl.formatMessage({ id: "text_to_us" })}
+                        </h3>
+                        <p>{intl.formatMessage({ id: "email" })}</p>
+                        <h3 className="bold-text">
+                            {intl.formatMessage({ id: "meet_us" })}
+                        </h3>
+                        <p>{intl.formatMessage({ id: "address" })}</p>
+                        <h3 className="bold-text">
+                            {intl.formatMessage({ id: "call_us" })}
+                        </h3>
+                        <p>{intl.formatMessage({ id: "phone" })}</p>
+                    </div>
+                </address>
+            </section>
+        </>
+    );
+};
 
-export default ContactForm
+export default ContactForm;

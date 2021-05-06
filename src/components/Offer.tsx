@@ -1,49 +1,89 @@
-import Button from "../components/Button"
-import { Icon } from "@iconify/react"
-import circleCheck from "@iconify-icons/akar-icons/circle-check"
-import plusIcon from "@iconify-icons/fa-solid/plus"
-import React from "react"
+import Button from "../components/Button";
+import { Icon } from "@iconify/react";
+import circleCheck from "@iconify-icons/akar-icons/circle-check";
+import plusIcon from "@iconify-icons/fa-solid/plus";
+import React from "react";
+import { useIntl } from "gatsby-plugin-react-intl";
 
 const Offer = () => {
-  return (
-    <>
-      <section>
-        <div className="offer-container">
-          <div className="offer-card">
-            <h2 className="offer-title">CENA PODSTAWOWA</h2>
-            <div>
-              <span className="offer-price">49</span>
-              <span className="offer-price-desc">zł</span>
-            </div>
-            <span className="offer-price-desc">miesięcznie</span>
-            <br />
-            <div className="offer-text-description">
-              <Icon className="offer-icon" icon={circleCheck}></Icon>
-              <span> 30 nagrań w bibliotece</span>
-            </div>
-            <div className="offer-text-description">
-              <Icon className="offer-icon" icon={circleCheck}></Icon>
-              <span> do 5 jednoczesnych uczestniczących w live</span>
-            </div>
-            <div className="offer-text-description">
-              <Icon className="offer-icon" icon={plusIcon}></Icon>
-              <span> 1 nagranie w bibliotece - 1 zł za miesiąc</span>
-            </div>
-            <div className="offer-text-description">
-              <Icon className="offer-icon" icon={plusIcon}></Icon>
-              <span> 1 uczestnik treningu live - 5 zł za miesiąc</span>
-            </div>
-            <br />
-            <Button
-              slug={"https://app.click4fit.me/register-to-create-organisation"}
-            >
-              ZAREJESTRUJ SIĘ
-            </Button>
-          </div>
-        </div>
-      </section>
-    </>
-  )
-}
+    const intl = useIntl();
+    return (
+        <>
+            <section>
+                <div className="offer-container">
+                    <div className="offer-card">
+                        <h2 className="offer-title">
+                            {intl.formatMessage({
+                                id: "base_price",
+                            })}
+                        </h2>
+                        <div>
+                            <span className="offer-price">49</span>
+                            <span className="offer-price-desc">zł</span>
+                        </div>
+                        <span className="offer-price-desc">
+                            {intl.formatMessage({
+                                id: "monthly",
+                            })}
+                        </span>
+                        <br />
+                        <div className="offer-text-description">
+                            <Icon
+                                className="offer-icon"
+                                icon={circleCheck}
+                            ></Icon>
+                            <span>
+                                {" "}
+                                {intl.formatMessage({
+                                    id: "price_text_1",
+                                })}
+                            </span>
+                        </div>
+                        <div className="offer-text-description">
+                            <Icon
+                                className="offer-icon"
+                                icon={circleCheck}
+                            ></Icon>
+                            <span>
+                                {" "}
+                                {intl.formatMessage({
+                                    id: "price_text_2",
+                                })}
+                            </span>
+                        </div>
+                        <div className="offer-text-description">
+                            <Icon className="offer-icon" icon={plusIcon}></Icon>
+                            <span>
+                                {" "}
+                                {intl.formatMessage({
+                                    id: "price_text_3",
+                                })}
+                            </span>
+                        </div>
+                        <div className="offer-text-description">
+                            <Icon className="offer-icon" icon={plusIcon}></Icon>
+                            <span>
+                                {" "}
+                                {intl.formatMessage({
+                                    id: "price_text_4",
+                                })}
+                            </span>
+                        </div>
+                        <br />
+                        <Button
+                            slug={
+                                "https://app.click4fit.me/register-to-create-organisation"
+                            }
+                        >
+                            {intl.formatMessage({
+                                id: "register",
+                            })}
+                        </Button>
+                    </div>
+                </div>
+            </section>
+        </>
+    );
+};
 
-export default Offer
+export default Offer;

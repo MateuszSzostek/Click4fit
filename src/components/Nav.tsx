@@ -1,36 +1,85 @@
-import React from "react"
-import GoUpButton from "./GoUpButton"
-import { Link } from "gatsby"
-import { AnchorLink } from "gatsby-plugin-anchor-links"
+import React from "react";
+import GoUpButton from "./GoUpButton";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
+import { useIntl, Link } from "gatsby-plugin-react-intl";
 
 interface INavProps {
-  toggleMenu?: Function
+    toggleMenu?: Function;
 }
 
 const Nav = (props: INavProps) => {
-  const { toggleMenu } = props
-  return (
-    <>
-      <ul className="nav-elements">
-        <AnchorLink to="/#features" title="Our team">
-          <li className="nav-item">FUNKCJE</li>
-        </AnchorLink>
-        <AnchorLink to="/#howitworks" title="Our team">
-          <li className="nav-item">JAK TO DZIAŁA?</li>
-        </AnchorLink>
-        <AnchorLink to="/#offer" title="Our team">
-          <li className="nav-item">CENNIK</li>
-        </AnchorLink>
-        <Link to="/blog">
-          <li className="nav-item">BLOG</li>
-        </Link>
-        <AnchorLink to="/#contact" title="Our team">
-          <li className="nav-item">KONTAKT</li>
-        </AnchorLink>
-      </ul>
-      <GoUpButton />
-    </>
-  )
-}
+    const intl = useIntl();
+    const { toggleMenu } = props;
+    return (
+        <>
+            <ul className="nav-elements">
+                <AnchorLink
+                    to={
+                        intl.formatMessage({
+                            id: "lang",
+                        }) + "/#features"
+                    }
+                    title="Our team"
+                >
+                    <li className="nav-item">
+                        {intl.formatMessage({
+                            id: "features",
+                        })}
+                    </li>
+                </AnchorLink>
+                <AnchorLink
+                    to={
+                        intl.formatMessage({
+                            id: "lang",
+                        }) + "/#howitworks"
+                    }
+                    title="Our team"
+                >
+                    <li className="nav-item">
+                        {intl.formatMessage({
+                            id: "how_it_works",
+                        })}
+                    </li>
+                </AnchorLink>
+                <AnchorLink
+                    to={
+                        intl.formatMessage({
+                            id: "lang",
+                        }) + "/#offer"
+                    }
+                    title="Our team"
+                >
+                    <li className="nav-item">
+                        {intl.formatMessage({
+                            id: "pricing",
+                        })}
+                    </li>
+                </AnchorLink>
+                <Link to="/blog">
+                    <li className="nav-item">
+                        {intl.formatMessage({
+                            id: "blog",
+                        })}
+                    </li>
+                </Link>
+                <AnchorLink
+                    to={
+                        intl.formatMessage({
+                            id: "lang",
+                        }) + "/#contact"
+                    }
+                    title="Our team"
+                >
+                    <li className="nav-item">
+                        {intl.formatMessage({
+                            id: "contact",
+                        })}
+                    </li>
+                </AnchorLink>
+            </ul>
+            <GoUpButton />
+        </>
+    );
+};
 
-export default Nav
+export default Nav;
