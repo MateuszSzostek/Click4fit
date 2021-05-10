@@ -11,6 +11,8 @@ postImage: images/co_potrzebujesz_do_treningu_online.jpg
 
 ![Co potrzebujesz do treningu online](./images/co_potrzebujesz_do_treningu_online.jpg)
 
+W dobie pandemii wiele placówek sportowych jest zamykanych, w tym także siłownie i sale treningowe. Miejsca, które były oblegane przez miłośników aktywności, dziś stoją puste. Zamknięcie branży fitness nie sprawiło jednak, że ludzie przestali ćwiczyć – zmieniła się jedynie forma. Z poniższego artykułu dowiesz się: Czym jest trening online?, Jakie są zalety treningu online? Czym są platformy do treningów online? Jak zachęcić ludzi do treningów online?
+
 <h1>Czym jest trening online?</h1>
 Trening online jest to rodzaj nauczania, który pomaga w zdobywaniu i utrwalaniu nowej wiedzy. Treningi fizyczne prowadzone przez internet, są alternatywą dla zajęć na siłowni czy sali treningowej. Trener prowadzący zajęcia łączy się z resztą grupy za pomocą platformy lub komunikatora i wykonuje ćwiczenia, które w tym samym czasie powtarzają jego podopieczni. Urządzenie, na którym uczestnicy otworzą trening, jest tu bez znaczenia. Może być to laptop, komputer stacjonarny, tablet, a nawet telefon. W trakcie treningu jest możliwość komunikacji poprzez czat. Ludzie biorący udział w Twoim treningu mogą na bieżąco zadawać pytania lub podawać swoje sugestie dotyczące ćwiczeń. Dużo osób szuka w wyszukiwarkach możliwości wzięcia udziału w treningu online. Jest to ostatnio najpopularniejsza forma aktywności fizycznej, ciesząca się ciągle rosnącym zainteresowaniem.
 
