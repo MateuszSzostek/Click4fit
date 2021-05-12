@@ -1,4 +1,4 @@
-FROM nginx:alpine
-COPY ./public/ /usr/share/nginx/html
+// FROM nginx:alpine
+// COPY ./public/ /usr/share/nginx/html
 
-EXPOSE 8002
+// EXPOSE 8002
